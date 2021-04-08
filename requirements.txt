@@ -54,7 +54,6 @@ mpmath==1.1.0
 nbconvert==5.6.1
 nbformat==5.0.5
 notebook==6.0.3
-numba==0.52.0
 numpy==1.18.1
 opencv-python==4.5.1.48
 openpyexcel==2.5.14
@@ -73,7 +72,6 @@ pyAesCrypt==0.4.4
 PyAutoGUI==0.9.52
 pycalendar==2.0
 pycparser==2.20
-pygame==1.9.6
 PyGetWindow==0.0.9
 Pygments==2.6.1
 pyinstaller==4.0
@@ -114,9 +112,7 @@ terminado==0.8.3
 testpath==0.4.4
 tornado==6.0.4
 traitlets==4.3.3
-twilio==6.46.0
 urllib3==1.25.10
-vk-api==11.9.1
 wcwidth==0.1.9
 webencodings==0.5.1
 Werkzeug==1.0.1
