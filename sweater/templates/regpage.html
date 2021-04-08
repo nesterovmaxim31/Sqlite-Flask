@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>регестрируемся</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='main.css', v=1)}}">
+</head>
+<body>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+<div class="container mt-5">
+    <form method="post">
+        <h1>Регестрация</h1>
+        <hr>
+        <input type="text" name="login" id="title" class="form-control"> <br>
+        <hr>
+        <input type="text" name="password"> <br>
+        <hr>
+        <input type="text" name="password2"> <br>
+        <hr>
+        <input type="submit" class="btn btn-success" value="Зарегестрироваться"> <br>
+        <hr>
+        <a href="/login">Войти</a>
+    </form>
+</div>
+</body>
+</html>

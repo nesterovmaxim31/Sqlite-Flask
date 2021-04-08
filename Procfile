@@ -1,1 +1,1 @@
-web: gunicorn app:linda
+worker: python linda.py

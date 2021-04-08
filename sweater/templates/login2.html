@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V11</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='main2.css', v=1)}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='util.css', v=1)}}">
+	<script src="{{ url_for('static', filename='firstjs.js') }}"></script>
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-l-50 p-r-50 p-t-77 p-b-30">
+					<span class="login100-form-title p-b-55">
+						Login
+					</span>
+				<div class="flash">
+				{% with messages = get_flashed_messages() %}
+				  {% if messages %}
+				    <ul class=flashes>
+				    {% for message in messages %}
+				      <li>{{ message }}</li>
+				    {% endfor %}
+				    </ul>
+				  {% endif %}
+				{% endwith %}
+				{% block body %}{% endblock %}
+				</div>
+					<div class="container mt-5">
+					<form method="post">
+						<div class="wrap-input100 validate-input m-b-16">
+							<input class="input100" type="text" name="login" placeholder="Login">
+						</div>
+						<div>
+							<input class="input100" type="password" name="password" placeholder="Password">
+						</div>
+						<div class="btn btn-success">
+							<button class="login100-form-btn">
+								Login
+							</button>
+						</div>
+					</form>
+						<div class="btn btn-success">
+							<a href="/checkemail">
+								Registration
+							</a>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	<script >
+	console.log(6);
+	</script>
+</body>
+</html>

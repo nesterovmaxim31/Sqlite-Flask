@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+    <title>names</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='main.css', v=1)}}">
+
+</head>
+<body>
+<hr>
+<a href="/">Основная страница</a> <br>
+<hr>
+<div class="container mt-5">
+    {% for max in users %}
+    <div class="aletr alert-info">
+        <p>{{ max.name }}</p>
+        <p>Дата: {{max.time.date()}}</p>
+        <a href="/names/{{ max.id }}" class="btn btn-warning">Узнать фамилию</a>
+        <hr>
+    </div>
+    {% endfor %}
+</div>
+</body>
+</html>

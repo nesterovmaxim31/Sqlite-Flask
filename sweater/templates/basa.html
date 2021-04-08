@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>база</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='main.css', v=1)}}">
+</head>
+<body>
+<div style="border-left:3px solid red; padding-left:10px;">
+<h3>
+<a href="/names">Имена</a> <br>
+<div class="container mt-5">
+    <form method="post">
+        <h1>имя</h1>
+        <input type="text" name="title" id="title" class="form-control"> <br>
+        <hr>
+        <input type="text" name="mik" id="mik" class="form-control"> <br>
+        <input type="submit" class="btn btn-success">
+    </form>
+    <a href="/logout">выйти</a> <br>
+    <a href="/deleteaccount">Удалить аккаунт</a>
+</div>
+</h3>
+</div>
+</body>
+</html>
