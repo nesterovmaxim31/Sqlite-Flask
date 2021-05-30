@@ -3,5 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/firstflask-2020" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/way" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/way/polar-cove-86232" vcs="Git" />
   </component>
 </project>
